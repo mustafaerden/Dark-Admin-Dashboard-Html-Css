@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+/*  styling scrollbars  */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #858788;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #17191c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cf1806;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  display: flex;
+  background-color: #212529;
+}
+
+/* Sidebar Styles Starts Here */
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  background: linear-gradient(45deg, #272a2f, #202328);
+  box-shadow: 5px -5px 10px #131517, -5px 5px 10px #353941;
+}
+
+#sidebar-wrapper .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+#sidebar-wrapper .avatar a {
+  padding: 12px;
+  border-radius: 50%;
+  background: #24272c;
+  box-shadow: inset 5px -5px 5px #1a1c20, inset -5px 5px 5px #3e444d;
+}
+
+#sidebar-wrapper .avatar i {
+  font-size: 18px;
+  color: #ee3600;
+}
+
+#sidebar-wrapper .spacer {
+  margin: 35px 0;
+}
+
+#sidebar-wrapper ul {
+  list-style-type: none;
+  padding: 30px 0;
+}
+
+#sidebar-wrapper ul li {
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+#sidebar-wrapper ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #858788;
+  border-radius: 5px;
+  box-shadow: inset 5px -5px 10px #1a1c20, inset -5px 5px 10px #3e444d;
+}
+
+#sidebar-wrapper ul li a i {
+  font-size: 18px;
+}
+
+.active_link a {
+  color: #ee3600 !important;
+}
+
+/* Sidebar Styles Ends Here */
+
+/* Page Content Styles Starts Here */
+
+#page-content-wrapper {
+  /* min-width: 100vw; */
+  min-width: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  flex-wrap: wrap;
+  color: #858788;
+  padding: 20px;
+  min-height: 300px;
+  border-radius: 15px;
+  background: #17191c;
+  box-shadow: inset -5px -5px 10px #141618, inset 5px 5px 10px #1a1c20;
+}
+
+.card1 {
+  min-width: 70%;
+  margin-right: 15px;
+}
+
+.card1_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car1_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.car1_text {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card1_span {
+  color: #ee3600;
+  font-size: 14px;
+}
+
+.card1_table_wrapper {
+  margin-top: 25px;
+}
+
+.card1_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card1_table_head {
+  text-align: left;
+  border-radius: 10px;
+  background: #1d1e22;
+  box-shadow: 5px 5px 10px #17171b, -5px -5px 10px #232529;
+}
+
+.card1_table_head tr th {
+  padding: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card1_table_tbody .positiveIcon {
+  font-size: 12px;
+  padding: 6px;
+  margin-right: 5px;
+  background: linear-gradient(145deg, #353333, #4d4949);
+  border-radius: 100%;
+  box-shadow: inset 12.61px 12.61px 15px #2b2929,
+    inset -12.61px -12.61px 15px #575353;
+}
+
+.card1_table_tbody .negativeIcon {
+  font-size: 12px;
+  padding: 6px 8px;
+  margin-right: 5px;
+  color: black;
+  background: #d74b0f;
+  border-radius: 100%;
+  box-shadow: inset 1.2px 1.2px 3px #852f09, inset -1.2px -1.2px 3px #ff6815;
+}
+
+.card1_table_tbody tr td {
+  padding: 18px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Clock Styles Starts Here */
+
+.clock {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border: 4px solid #cf1806;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #cf1806;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+.clock .hour_wrapper,
+.clock .minute_wrapper,
+.clock .second_wrapper {
+  position: absolute;
+}
+
+.clock .hour_wrapper,
+.hour {
+  width: 140px;
+  height: 140px;
+}
+
+.clock .minute_wrapper,
+.minute {
+  width: 170px;
+  height: 170px;
+}
+
+.clock .second_wrapper,
+.second {
+  width: 222px;
+  height: 222px;
+}
+
+.hour,
+.minute,
+.second {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hour:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 70px;
+  background: #e55d03;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.minute:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: #e55d03;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.second:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 115px;
+  background: #cfccc9;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Clock Styles Ends Here */
+
+/* Button Styles Starts Here */
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  box-shadow: inset 0px -1px 4px 0px #484d55;
+  background: linear-gradient(to bottom, #2d3035 5%, #484d55 100%);
+  background-color: #2d3035;
+  border: 1px solid #2d3035;
+  color: #858788;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to bottom, #484d55 5%, #2d3035 100%);
+  background-color: #484d55;
+}
+
+.btn-primary {
+  background: linear-gradient(to bottom, #ee3800 5%, #e8641c 100%);
+  background-color: #ee3800;
+  border: 1px solid #ee3800;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to bottom, #e8641c 5%, #ee3800 100%);
+  background-color: #e8641c;
+}
+/* Button Styles Ends Here */
+
+.row2 {
+  margin: 15px 0;
+}
+
+.card3 {
+  flex: 1;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.weather_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather_title span {
+  font-weight: bold;
+}
+
+.weather_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_image img {
+  margin-bottom: 8px;
+}
+
+.weather_image span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.weather_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_numbers p {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.left_numbers p i {
+  width: 5px;
+  margin-right: 20px;
+}
+
+.right_degree p {
+  font-weight: bold;
+  font-size: 52px;
+}
+
+.card3 .weather {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #cf1806;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card4 {
+  min-width: 70%;
+}
